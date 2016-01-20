@@ -191,8 +191,8 @@
 	<joint name="joint_base_to_s2" type="revolute">
 		<parent link="link_base"/>
 		<child link="link_s2"/>
-		<origin xyz="0 0 0.317" rpy="0 0 0" />
-		<axis xyz="0 0 -1" />
+		<origin xyz="0 0 0.317" rpy="0 0 3.14" />
+		<axis xyz="0 0 1" />
 		<limit effort="1000.0" lower="-3.09" upper="3.09" velocity="0.1"/>
 		<cfm>0.7</cfm>
 		<damping>10.0</damping>
@@ -980,7 +980,7 @@
   	<joint name="jointHand" type="fixed">
 	    <parent link="inter"/>
 	    <child link="forearm"/>
-	    <origin xyz="0 0 0.055" rpy="0 0 1.57"/>
+	    <origin xyz="0 0 0.055" rpy="0 0 -1.57"/>
 	    <axis xyz="0 1 0"/>
 	    <!--<dynamics damping="0.7"/> -->
   	</joint>
